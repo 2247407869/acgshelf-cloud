@@ -1,24 +1,15 @@
 spring:
   application:
-    name: acgshelf-config
+    name: acgshelf-zipkin
   boot:
     admin:
       client:
         url: http://localhost:8084
-  cloud:
-    config:
-      label: master
-      server:
-        git:
-          uri: https://github.com/2247407869/acgshelf-cloud/tree/master/acgshelf-config.git
-          search-paths: respo
-          username: 2247407869@qq.com
-          password: lls0908329
   zipkin:
     base-url: http://localhost:9411
 
 server:
-  port: 8888
+  port: 9411
 
 eureka:
   client:
@@ -33,3 +24,7 @@ management:
     web:
       exposure:
         include: health,info
+  metrics:
+    web:
+      server:
+        auto-time-requests: false                     #2.8之后增加的配置
