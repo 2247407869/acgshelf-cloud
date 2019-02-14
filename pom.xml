@@ -16,6 +16,8 @@
         <module>acgshelf-zipkin</module>
         <module>acgshelf-zuul</module>
         <module>acgshelf-service-admin</module>
+        <module>acgshelf-common-service</module>
+        <module>acgshelf-common</module>
     </modules>
 
 </project>
