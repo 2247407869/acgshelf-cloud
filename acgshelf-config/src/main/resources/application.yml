@@ -10,8 +10,8 @@ spring:
       label: master
       server:
         git:
-          uri: https://github.com/2247407869/acgshelf-cloud/tree/master/acgshelf-config.git
-          search-paths: respo
+          uri: https://github.com/2247407869/acgshelf-cloud.git
+          search-paths: acgshelf-config/respo
           username: 2247407869@qq.com
           password: lls0908329
   zipkin:
