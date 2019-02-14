@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>wang.acgshelf</groupId>
+    <artifactId>acgshelf-cloud</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>acgshelf-admin</module>
+        <module>acgshelf-config</module>
+        <module>acgshelf-dependencies</module>
+        <module>acgshelf-eureka</module>
+        <module>acgshelf-zipkin</module>
+        <module>acgshelf-zuul</module>
+        <module>acgshelf-service-admin</module>
+    </modules>
+
+</project>
