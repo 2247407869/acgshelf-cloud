@@ -15,6 +15,13 @@
     <inceptionYear>2019-Now</inceptionYear>
 
     <dependencies>
+        <!--Project-->
+        <dependency>
+            <groupId>wang.acgshelf</groupId>
+            <artifactId>acgshelf-common</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+
         <!-- Spring Boot Begin -->
         <dependency>
             <groupId>com.alibaba</groupId>
