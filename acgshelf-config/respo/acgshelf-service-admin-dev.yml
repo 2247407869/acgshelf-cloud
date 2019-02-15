@@ -1,6 +1,6 @@
 spring:
   application:
-    name: itoken-service-admin
+    name: acgshelf-service-admin
   boot:
     admin:
       client:
