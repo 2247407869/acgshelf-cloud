@@ -18,6 +18,7 @@
         <module>acgshelf-service-admin</module>
         <module>acgshelf-common-service</module>
         <module>acgshelf-common</module>
+        <module>acgshelf-service-redis</module>
     </modules>
 
 </project>
