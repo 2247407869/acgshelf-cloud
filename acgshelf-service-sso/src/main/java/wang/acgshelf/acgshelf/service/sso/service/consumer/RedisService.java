@@ -11,7 +11,7 @@ public interface RedisService {
 
     @RequestMapping(value = "put", method = RequestMethod.POST)
     public String put(@RequestParam("key") String key,
-                      @RequestParam("value") Object value,
+                      @RequestParam("value") String value,
                       @RequestParam("seconds") long seconds);
 
     @RequestMapping(value = "get", method = RequestMethod.GET)

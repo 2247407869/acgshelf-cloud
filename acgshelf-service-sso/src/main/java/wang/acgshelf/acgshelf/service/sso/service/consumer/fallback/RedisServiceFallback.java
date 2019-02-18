@@ -7,7 +7,7 @@ import wang.acgshelf.acgshelf.service.sso.service.consumer.RedisService;
 @Component
 public class RedisServiceFallback implements RedisService {
     @Override
-    public String put(String key, Object value, long seconds) {
+    public String put(String key, String value, long seconds) {
         return Fallback.badGateway();
     }
 

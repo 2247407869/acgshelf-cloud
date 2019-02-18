@@ -21,20 +21,25 @@ public class LoginServiceImpl implements LoginService {
     private TbSysUserMapper tbSysUserMapper;
 
     @Override
-    public TbSysUser Login(String loginCode, String password) {
+    public TbSysUser login(String loginCode, String password) {
         String json = redisService.get(loginCode);
+        System.out.println(json);
+        TbSysUser tbSysUser = null;
 
         //如果redis中没有记录
         if(json == null){
             Example example = new Example(TbSysUser.class);
             example.createCriteria().andEqualTo("loginCode", loginCode);
 
-            TbSysUser tbSysUser = tbSysUserMapper.selectOneByExample(example);
+            tbSysUser = tbSysUserMapper.selectOneByExample(example);
             if (tbSysUser != null) {
                 String encryptedPassword = DigestUtils.md5DigestAsHex(password.getBytes());
                 if (encryptedPassword.equals(tbSysUser.getPassword())) {
-                    redisService.put(loginCode, password, 60 * 60 * 24);
-                    return tbSysUser;
+                    try {
+                        redisService.put(loginCode, MapperUtils.obj2json(tbSysUser), 60 * 60 * 24);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }
@@ -42,12 +47,12 @@ public class LoginServiceImpl implements LoginService {
         //如果redis中有记录
         else {
             try {
-                return MapperUtils.json2pojo(json, TbSysUser.class);
+                tbSysUser = MapperUtils.json2pojo(json, TbSysUser.class);
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
 
-        return null;
+        return tbSysUser;
     }
 }
