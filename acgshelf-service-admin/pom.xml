@@ -17,6 +17,11 @@
     <dependencies>
         <dependency>
             <groupId>wang.acgshelf</groupId>
+            <artifactId>acgshelf-common-domain</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>wang.acgshelf</groupId>
             <artifactId>acgshelf-common-service</artifactId>
             <version>${parent.version}</version>
         </dependency>

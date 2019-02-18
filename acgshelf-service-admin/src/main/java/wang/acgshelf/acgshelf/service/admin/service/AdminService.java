@@ -1,6 +1,6 @@
 package wang.acgshelf.acgshelf.service.admin.service;
 
-import wang.acgshelf.acgshelf.service.admin.domain.TbSysUser;
+import wang.acgshelf.acgshelf.common.domain.TbSysUser;
 
 public interface AdminService {
 

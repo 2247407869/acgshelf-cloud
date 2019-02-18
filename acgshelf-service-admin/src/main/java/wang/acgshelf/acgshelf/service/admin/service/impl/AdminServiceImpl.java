@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
 import tk.mybatis.mapper.entity.Example;
-import wang.acgshelf.acgshelf.service.admin.domain.TbSysUser;
+import wang.acgshelf.acgshelf.common.domain.TbSysUser;
 import wang.acgshelf.acgshelf.service.admin.mapper.TbSysUserMapper;
 import wang.acgshelf.acgshelf.service.admin.service.AdminService;
 

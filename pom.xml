@@ -19,6 +19,7 @@
         <module>acgshelf-common-service</module>
         <module>acgshelf-common</module>
         <module>acgshelf-service-redis</module>
+        <module>acgshelf-common-domain</module>
     </modules>
 
 </project>

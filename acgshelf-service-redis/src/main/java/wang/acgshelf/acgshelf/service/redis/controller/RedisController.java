@@ -19,7 +19,7 @@ public class RedisController {
         return RESULT_OK;
     }
 
-    @RequestMapping(value = "find", method = RequestMethod.GET)
+    @RequestMapping(value = "get", method = RequestMethod.GET)
     public String find(String key) {
         String json = null;
 

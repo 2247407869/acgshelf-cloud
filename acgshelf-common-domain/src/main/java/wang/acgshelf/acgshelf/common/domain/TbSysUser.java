@@ -1,8 +1,8 @@
-package wang.acgshelf.acgshelf.service.admin.domain;
+package wang.acgshelf.acgshelf.common.domain;
 
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
-import javax.persistence.*;
 
 @Table(name = "tb_sys_user")
 public class TbSysUser {
