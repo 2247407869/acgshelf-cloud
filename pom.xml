@@ -20,6 +20,7 @@
         <module>acgshelf-common</module>
         <module>acgshelf-service-redis</module>
         <module>acgshelf-common-domain</module>
+        <module>acgshelf-service-sso</module>
     </modules>
 
 </project>
